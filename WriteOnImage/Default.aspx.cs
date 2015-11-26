@@ -21,8 +21,8 @@ namespace WriteOnImage
             // Write text on it
             graphicImage.DrawString(studentName, new Font("Arial", 20, FontStyle.Bold), SystemBrushes.WindowText, new Point(300, 250));
 
-            // Draw bar code
-            var barCodeImageSrc = new Bitmap(Server.MapPath("seal.png"));
+            // Draw QR Code, for demo i'll be using seal.png image
+            var barCodeImageSrc = new Bitmap(Server.MapPath("seal.png"));  // File source maybe generated QR Code
             graphicImage.DrawImage(barCodeImageSrc, new Point(570, 400));
 
             // Save Bitmap to stream
